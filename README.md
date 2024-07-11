@@ -4,13 +4,22 @@
   
 </div>
 
+# Demostrate
+|![](imgs/chat_demo.gif)|
+|:--:|
+|(LLM Response 1)|
+
+|![](imgs/chat.png)|
+|:--:|
+|(LLM Response 2)|
+
 # Introduction
 The ChatMFP is a GPT Assistant for printer engineering that helps improve the maintenance process. The ChatMFP uses LLMs like GPT to answer user queries. Basically, GPT doesn't contain a knowledge base about the service manuals from Kyocera or Epson, and the RAG structure was born for this. We use a Vector Store to store the PDFs in vector form and use Vector Search to retrieve the similar document by user query. In this way, LLMs can have context to answer the user query, creating an intelligent impression. But actually, LLM didn't learning any knowledge or having knowledge base on it self.
 
 # RAG
 The RAG named `Retrieval-Augmented Generation`, the terminology meaning for structure that helps extending the LLM knowledge base, helps to having conversation capability for the business internal data. Basically, 
 the RAG structure looks like on below:
-|![](images/rag_from_aws.jpg)|
+|![](imgs/rag_from_aws.jpg)|
 |:--:|
 |(Reference from AWS)|
 
@@ -42,5 +51,3 @@ The detailed process on `Query Flow`, this section simply describe in a few word
 # Deploy The Server（Provided By Clyde）
 The Python Flask must be deployed on Linux OS because the WSGI server does not behave with great capability on Windows Server. For more details about how to deployment, please read the documentation on here.
 > [How To Deploy The Flask-SocketIO And React.js On Linux For Production ?](https://medium.com/@asd66998854/deploy-the-flask-socketio-and-react-js-on-linux-step-by-step-adb01ab9db1e)
-
-# Part Of Demostrate
